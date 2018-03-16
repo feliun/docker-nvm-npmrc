@@ -38,6 +38,7 @@ ONBUILD RUN source /root/.nvm/nvm.sh && \
   # Install nodejs version specified in .nvmrc
   nvm install && \
   nvm alias default && \
+  nvm use && \
   ln -sf $(which node) /usr/bin/node && \
   ln -sf $(which npm) /usr/bin/npm
 
